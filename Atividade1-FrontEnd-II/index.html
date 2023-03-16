@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <span>Escola de Línguas</span>
+            <ul>
+                <li><a href="#language-ingles" class="ingles">Inglês</a></li>
+                <li><a href="#language-espanhol" class="espanhol">Espanhol</a></li>
+                <li><a href="#language-alemao" class="alemao">Alemão</a></li>
+            </ul>
+            <span>Login</span>
+        </nav>
+    </header>
+
+    <main>
+        <div id="language-ingles" class="language">
+            <img src="img/bandeira-estados-unidos.webp" alt="Bandeira_EUA">
+            <p class="prof">Professor: John P.</p>
+            <p class="novoAluno-eua btn-novoAluno" onclick="btnEUA()">Novo Aluno</p>
+            <p class="aluno">Aluno: João P.</p>
+            <p class="aluno">Aluno: Mariana J.</p>
+
+        </div>
+        <div id="language-espanhol" class="language">
+            <img src="img/bandeira-espanha.webp" alt="">
+            <p class="prof">Professor: Roberto B.</p>
+            <p class="novoAluno-espanhol btn-novoAluno" onclick="btnEspanhol();">Novo Aluno</p>
+            <p class="aluno">Aluno: Ricardo S.</p>
+        </div>
+        <div id="language-alemao" class="language">
+            <img src="img/bandeira-alemanha.png" alt="">
+            <p class="prof">Professor: Astrid S.</p>
+            <p class="btn-novoAluno-alemao btn-novoAluno" class="btn-novoAluno" onclick="btnAlemao();" >Novo Aluno</p>
+            <p class="aluno" >Aluno: Milton C.</p>
+        </div>
+    </main>
+
+    <footer>
+        Site desenvolvido por <a href="https://github.com/saviosantanna">Sávio Sant'anna</a>
+    </footer>
+
+    <script>
+        function btnAlemao() {
+           const divLanguage = document.getElementById('language-alemao');
+            const aluno = document.createElement('p');
+            aluno.className ="aluno";
+            const name = prompt('Nome do Aluno(a):');
+            const texto = document.createTextNode(`Aluno(a): ${name}`);
+            window.alert(`Aluno(a) ${name} inserido com sucesso na turma de Alemão!`);
+            aluno.appendChild(texto);
+            divLanguage.appendChild(aluno);
+        }
+
+        function btnEUA() {
+           const divLanguage = document.getElementById('language-ingles');
+            const aluno = document.createElement('p');
+            aluno.className ="aluno";
+            const name = prompt('Nome do Aluno(a):');
+            const texto = document.createTextNode(`Aluno(a): ${name}`);
+            window.alert(`Aluno(a) ${name} inserido com sucesso na turma de Inglês!`);
+            aluno.appendChild(texto);
+            divLanguage.appendChild(aluno);
+        }
+
+        function btnEspanhol() {
+           const divLanguage = document.getElementById('language-espanhol');
+            const aluno = document.createElement('p');
+            aluno.className ="aluno";
+            const name = prompt('Nome do Aluno(a):');
+            const texto = document.createTextNode(`Aluno(a): ${name}`);
+            window.alert(`Aluno(a) ${name} inserido com sucesso na turma de Espanhol!`);
+            aluno.appendChild(texto);
+            divLanguage.appendChild(aluno);
+        }
+    </script>
+</body>
+</html>

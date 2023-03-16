@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    margin: 20px 10px;
+    border-bottom: gray 2px solid;
+    padding: 10px;
+}
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > span {
+    background-color: rgb(238, 238, 238);
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px black;
+}
+
+header > nav > span:hover{
+    font-size: 20px;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(136, 107, 95);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    margin: 0 15px;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+li > a.ingles:hover{
+    background-color: blue;
+    color: red;
+    transition: 0.3s;
+}
+
+li > a.espanhol:hover{
+    background-color: red;
+    color: yellow;
+    transition: 0.3s;
+}
+
+li > a.alemao:hover{
+    background-color: black;
+    color: yellow;
+    transition: 0.3s;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    margin: 20px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+img{
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+
+.prof {
+    background-color: rgb(190, 190, 190);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0px 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.prof:hover{
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+.aluno {
+    background-color: rgb(255, 246, 206);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.aluno:hover {
+    background-color: rgb(185, 176, 133);
+    cursor: pointer;
+}
+
+.btn-novoAluno {
+    background-color: rgb(136, 231, 157);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.btn-novoAluno:hover {
+    background-color: rgb(100, 163, 114);
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px;
+    border-top: solid gray 1px;
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    font-weight: bold;
+}
