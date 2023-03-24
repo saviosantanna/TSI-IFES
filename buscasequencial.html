@@ -43,10 +43,17 @@ https://github.com/saviosantanna/TSI-IFES/blob/main/buscasequencial.html
                     encontrado = true;
                     posicao = i;
                     break;
-                }              
+                } 
             }
-            (encontrado == true) ? alert(`O termo ${termo} foi encontrado na posição ${posicao} (equivalente ao Nº${posicao+1}).`) : alert(`O termo ${termo} não existe no vetor.`);
-            alert(`O algoritimo realizou ${posicao+1} comparações.`);
+            
+            if (encontrado == true){
+                alert(`O termo ${termo} foi encontrado na posição ${posicao} (equivalente ao Nº${posicao+1}).`);
+                comparacao = i+1
+            } else {
+                alert(`O termo ${termo} não existe no vetor.`);
+                comparacao = i;
+            }
+            alert(`O algoritimo realizou ${comparacao} comparações.`);
         }   
 
     </script>
