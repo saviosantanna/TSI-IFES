@@ -1,4 +1,3 @@
-
 <!-- LINK CÓDIGO FONTE:
 https://github.com/saviosantanna/TSI-IFES/blob/main/buscasequencial.html
 -->
@@ -44,14 +43,11 @@ https://github.com/saviosantanna/TSI-IFES/blob/main/buscasequencial.html
                     encontrado = true;
                     posicao = i;
                     break;
-                }
-                var comparacao = i+1;
+                }              
             }
             (encontrado == true) ? alert(`O termo ${termo} foi encontrado na posição ${posicao} (equivalente ao Nº${posicao+1}).`) : alert(`O termo ${termo} não existe no vetor.`);
-            alert(`O algoritimo realizou ${comparacao} comparações.`);
-        }
-
-        
+            alert(`O algoritimo realizou ${posicao+1} comparações.`);
+        }   
 
     </script>
 </body>
